@@ -1,3 +1,4 @@
+
 async function analyzeText() {
   const text = document.getElementById("input").value;
 
@@ -6,10 +7,12 @@ async function analyzeText() {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ text }),
   });
-}
+
 
 const data = await response.json();
 console.log(data);
+
+}
 
 function App() {
   <></>;
